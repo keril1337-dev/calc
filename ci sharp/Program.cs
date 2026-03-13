@@ -122,12 +122,12 @@ namespace MatrixCalculator
             if (Rows == 1)
             {
                 det = Data[0, 0];
-                Console.WriteLine($"\nОпределитель 1x1: {det}");
+                Console.WriteLine($"Определитель 1x1: {det}");
             }
             else if (Rows == 2)
             {
                 det = Data[0, 0] * Data[1, 1] - Data[0, 1] * Data[1, 0];
-                Console.WriteLine($"\nПромежуточные действия (2x2):");
+                Console.WriteLine($"Промежуточные действия (2x2):");
                 Console.WriteLine($"({Data[0, 0]} * {Data[1, 1]}) - ({Data[0, 1]} * {Data[1, 0]}) = {det}");
             }
             else if (Rows == 3)
@@ -142,7 +142,7 @@ namespace MatrixCalculator
 
                 det = (p1 + p2 + p3) - (m1 + m2 + m3);
 
-                Console.WriteLine("\nПромежуточные действия (метод треугольников):");
+                Console.WriteLine("Промежуточные действия (метод треугольников):");
                 Console.WriteLine($"Положительные: ({p1}) + ({p2}) + ({p3}) = {p1+p2+p3}");
                 Console.WriteLine($"Отрицательные: ({m1}) + ({m2}) + ({m3}) = {m1+m2+m3}");
                 Console.WriteLine($"Итог: {p1+p2+p3} - ({m1+m2+m3}) = {det}");
@@ -202,4 +202,5 @@ namespace MatrixCalculator
             }
         }
     }
+
 }
